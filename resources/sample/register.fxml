@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2c2929;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RegisterController">
+    <left>
+        <AnchorPane prefHeight="400.0" prefWidth="246.0" style="-fx-background-color: #262323;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="152.0" fitWidth="186.0" layoutX="30.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@HealthSymbol.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane prefHeight="86.0" prefWidth="114.0" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="firstNameTextField" layoutX="185.0" layoutY="67.0" promptText="ชื่อ" />
+            <TextField fx:id="lastNameTextField" layoutX="185.0" layoutY="98.0" promptText="นามสกุล" />
+                <TextField fx:id="phoneNumberTextField" layoutX="185.0" layoutY="129.0" promptText="เบอร์โทรศัพท์" />
+                <TextField fx:id="emailTextField" layoutX="185.0" layoutY="159.0" promptText="Email" />
+                <TextField fx:id="userNameTextField" layoutX="185.0" layoutY="190.0" promptText="Username" />
+            <PasswordField fx:id="passwordTextField" layoutX="185.0" layoutY="220.0" promptText="password" />
+            <DatePicker fx:id="dateTextField" editable="false" layoutX="185.0" layoutY="250.0" prefHeight="26.0" prefWidth="150.0" promptText="dd/mm/yyyy" />
+                <TextField fx:id="addressTextField" layoutX="185.0" layoutY="281.0" promptText="ที่อยู่" />
+                <Label layoutX="164.0" layoutY="8.0" prefHeight="44.0" prefWidth="194.0" text="Registration" textFill="#ff5757">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Label>
+                <Label alignment="TOP_LEFT" layoutX="83.0" layoutY="70.0" prefHeight="20.0" prefWidth="30.0" text="ชื่อ" textFill="#ff5757">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+            <Label layoutX="83.0" layoutY="101.0" prefHeight="13.0" prefWidth="74.0" text="นามสกุล" textFill="#ff5757">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+                <Label layoutX="83.0" layoutY="132.0" prefHeight="13.0" prefWidth="74.0" text="เบอร์โทรศัพท์" textFill="#ff5757">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="83.0" layoutY="162.0" prefHeight="13.0" prefWidth="74.0" text="Email" textFill="#ff5757">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="83.0" layoutY="193.0" prefHeight="13.0" prefWidth="74.0" text="Username" textFill="#ff5757">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="83.0" layoutY="223.0" prefHeight="13.0" prefWidth="74.0" text="Password" textFill="#ff5757">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="83.0" layoutY="254.0" prefHeight="13.0" prefWidth="74.0" text="วันเกิด" textFill="#ff5757">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="83.0" layoutY="284.0" prefHeight="13.0" prefWidth="74.0" text="ที่อยู่" textFill="#ff5757">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+            <Label layoutX="81.0" layoutY="316.0" prefHeight="13.0" prefWidth="74.0" text="วัคซีน" textFill="#ff5757">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="registerLabel" alignment="CENTER" layoutX="67.0" layoutY="345.0" prefHeight="20.0" prefWidth="370.0" textFill="#ff5757">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+                <Button fx:id="confirmButton" layoutX="236.0" layoutY="365.0" mnemonicParsing="false" onAction="#confirmRegisterAction" style="-fx-background-color: #ffa3a3;" text="Confirm" />
+            <ChoiceBox fx:id="vaccine1ChoiceBox" layoutX="155.0" layoutY="313.0" prefHeight="26.0" prefWidth="51.0" />
+            <ChoiceBox fx:id="vaccine2ChoiceBox" layoutX="215.0" layoutY="313.0" prefHeight="26.0" prefWidth="51.0" />
+            <ChoiceBox fx:id="vaccine3ChoiceBox" layoutX="275.0" layoutY="313.0" prefHeight="26.0" prefWidth="51.0" />
+            <ChoiceBox fx:id="vaccine4ChoiceBox" layoutX="335.0" layoutY="313.0" prefHeight="26.0" prefWidth="51.0" />
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

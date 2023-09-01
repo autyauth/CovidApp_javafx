@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #2c2929;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ProfileController">
+   <left>
+      <AnchorPane prefHeight="362.0" prefWidth="201.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutY="1.0" prefHeight="361.0" prefWidth="200.0" style="-fx-background-color: #262323;">
+               <children>
+                  <Button fx:id="Home" mnemonicParsing="false" onAction="#toHome" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: #ff5757;" text="Home" textFill="#f7f7f7">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Region prefHeight="30.0" prefWidth="200.0" />
+                  <Button fx:id="Profile" mnemonicParsing="false" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: #ff5757;" text="Profile" textFill="#f7f7f7">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Region prefHeight="30.0" prefWidth="198.0" />
+                  <Button fx:id="CaseReport" mnemonicParsing="false" onAction="#toCaseReport" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: #ff5757;" text="รายงานผู้ติดเชื้อ" textFill="#f7f7f7">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Region prefHeight="30.0" prefWidth="200.0" />
+                  <Button fx:id="RiskAssesment" mnemonicParsing="false" onAction="#toRiskAssessment" prefHeight="70.0" prefWidth="200.0" style="-fx-background-color: #ff5757;" text="แบบประเมินผู้ติดเชื้อ" textFill="#f7f7f7">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <top>
+      <AnchorPane prefHeight="89.6" prefWidth="700.0" style="-fx-background-color: #262323;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutY="26.0" text="      Timeline Reminder" textFill="#ff4f4f">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </opaqueInsets>
+            </Label>
+            <Label fx:id="usernameLabel" layoutX="566.0" layoutY="28.0" text="Username" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </opaqueInsets>
+            </Label>
+            <Label layoutX="447.0" layoutY="26.0" text="Username :" textFill="#ff4f4f">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </opaqueInsets>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="396.0" prefWidth="503.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="edit" layoutX="103.0" layoutY="298.0" mnemonicParsing="false" onAction="#toProfileEdit" prefHeight="29.0" prefWidth="91.0" style="-fx-background-color: #ffa3a3;" text="EDIT" />
+            <Label layoutX="36.0" layoutY="58.0" prefHeight="26.0" prefWidth="81.0" text="ชื่อ นามสกุล" textFill="#ff5757">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="170.0" prefHeight="26.0" prefWidth="81.0" text="ที่อยู่" textFill="#ff5757">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="95.0" prefHeight="26.0" prefWidth="81.0" text="วันเกิด" textFill="#ff5757">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="208.0" prefHeight="26.0" prefWidth="81.0" text="Email" textFill="#ff5757">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="133.0" prefHeight="26.0" prefWidth="81.0" text="เบอร์โทรศัพท์" textFill="#ff5757">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="nameLabel" layoutX="195.0" layoutY="58.0" prefHeight="26.0" prefWidth="172.0" text="!ชื่อ นามสกุล" textFill="#ff5757">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="birthdayLabel" layoutX="195.0" layoutY="95.0" prefHeight="26.0" prefWidth="175.0" text="!วันเกิด" textFill="#ff5757">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="phonenumLabel" layoutX="195.0" layoutY="133.0" prefHeight="26.0" prefWidth="113.0" text="!เบอร์โทรศัพท์" textFill="#ff5757">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="addressLabel" layoutX="195.0" layoutY="170.0" prefHeight="26.0" prefWidth="208.0" text="!ที่อยู่" textFill="#ff5757">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="emailLabel" layoutX="195.0" layoutY="208.0" prefHeight="26.0" prefWidth="226.0" text="!Email" textFill="#ff5757">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="115.0" fitWidth="106.0" layoutX="368.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" />
+            <Button layoutX="281.0" layoutY="298.0" mnemonicParsing="false" onAction="#buttonDeleteAccount" prefHeight="30.0" prefWidth="111.0" style="-fx-background-color: #ffa3a3;" text="Delete account " />
+            <Label layoutX="36.0" layoutY="247.0" prefHeight="26.0" prefWidth="81.0" text="Vaccine" textFill="#ff5757">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="firstvacLabel" layoutX="132.0" layoutY="247.0" prefHeight="26.0" prefWidth="55.0" text="!first" textFill="#ff5757">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="secondvacLabel" layoutX="194.0" layoutY="247.0" prefHeight="26.0" prefWidth="55.0" text="!second" textFill="#ff5757">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="thirdvacLabel" layoutX="271.0" layoutY="247.0" prefHeight="26.0" prefWidth="55.0" text="!third" textFill="#ff5757">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="fourthvacLabel" layoutX="339.0" layoutY="247.0" prefHeight="26.0" prefWidth="55.0" text="!fourth" textFill="#ff5757">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
+
